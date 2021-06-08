@@ -1,0 +1,23 @@
+<template>
+    <div class="container">
+        <div class="text-center" style="margin: 20px 0px 20px 0px;">
+            <a href="https://shouts.dev/" target="_blank"><img style="width: 50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png"></a><br>
+            <span class="text-secondary">Laravel & Vue CRUD Single Page Application (SPA) Tutorial</span>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <router-link to="/" class="nav-item nav-link">Home</router-link>
+                    <router-link to="/books" class="nav-item nav-link">Add Book</router-link>
+                    <router-link to="/about" class="nav-item nav-link">About</router-link>
+                </div>
+            </div>
+        </nav>
+        <br/>
+        <router-view></router-view>
+    </div>
+</template>
+<script>
+export default {}
+</script>
